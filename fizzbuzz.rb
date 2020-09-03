@@ -1,10 +1,11 @@
 require_relative './spec_helper.rb'
 
-returns "Fizz" when the number is divisible by 3
-      fizz_3 = fizzbuzz(3)
+describe "fizzbuzz" do
+  it 'returns "Fizz" when the number is divisible by 3' do
+    fizz_3 = fizzbuzz(3)
 
-      expect(fizz_3) = "Fizz"
-    end
+    expect(fizz_3).to eq("Fizz")
+  end
 returns "Buzz" when the number is divisible by 5
       fizz_5 = fizzbuzz(5)
 
